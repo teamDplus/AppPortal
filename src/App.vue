@@ -1,24 +1,19 @@
-<script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-</script>
-
 <template>
-  <div>
-
+  <div class="p-10">
+    <GoogleLogin />
+    <GoogleLogout />
+    <ProductSubmit />
+    <RouterView />
   </div>
-  <!-- <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header>
-
-  <RouterView /> -->
 </template>
+
+<script setup lang="ts">
+import { RouterLink, RouterView } from 'vue-router';
+import Products from './components/Products.vue';
+import GoogleLogin from './components/GoogleLogin.vue';
+import GoogleLogout from './components/GoogleLogout.vue';
+import ProductSubmit from './components/ProductSubmit.vue';
+</script>
 
 <style scoped>
 
