@@ -16,7 +16,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);
 export const auth = getAuth(app);
-export const analytics =
-  process.env.NODE_ENV === 'production' && typeof window !== 'undefined'
-    ? getAnalytics(app)
-    : undefined
+// export const analytics =
+//   process.env.NODE_ENV === 'production' && typeof window !== 'undefined'
+//     ? getAnalytics(app)
+//     : undefined
